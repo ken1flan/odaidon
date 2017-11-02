@@ -9,3 +9,15 @@ Odaidon is a ruboty gives drawing theme in mastodon.
 - [ ] お題を与えられたら、覚える
 - [ ] お題を頼まれたら、ランダムにひとつ返信する
   - [ ] お題はその日一日同じお題を返信する
+
+## Development
+### 起動
+```
+$ bundle exec ruboty
+```
+
+### 終了
+```
+$ exit
+```
+
