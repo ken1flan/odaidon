@@ -12,6 +12,7 @@ GEM
       concurrent-ruby (~> 1.0)
     mem (0.1.5)
     minitest (5.10.3)
+    rake (12.1.0)
     ruboty (1.3.0)
       activesupport
       bundler
@@ -27,6 +28,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  rake
   ruboty
 
 BUNDLED WITH
