@@ -1,3 +1,5 @@
+require 'ruboty'
+
 module Ruboty
   module Handlers
     class Parrot < Base
