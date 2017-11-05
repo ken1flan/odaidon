@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'mastodon-api', git: 'https://github.com/tootsuite/mastodon-api', ref: '39f4b0354f3c15075d16e9a810d695824a230b0b'
 gem 'rake'
 gem 'ruboty'
+gem 'ruboty-mastodon', git: 'https://github.com/en30/ruboty-mastodon'
 
 group :development, :test do
   gem 'pry-byebug'
