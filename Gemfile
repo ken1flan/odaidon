@@ -1,3 +1,8 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "ruboty"
+gem 'rake'
+gem 'ruboty'
+
+group :development, :test do
+  gem 'pry-byebug'
+end
