@@ -3,10 +3,10 @@ Odaidonはお絵かきのお題を出してくれるrubotyです。
 Odaidon is a ruboty gives drawing theme in mastodon.
 
 ## To do list
-- [ ] 話しかけられたら、オウム返しする
-  - [ ] テスト
+- [x] 話しかけられたら、オウム返しする
+  - [x] テスト
   - [x] オウム返し
-- [ ] mastodonに住み着く
+- [x] mastodonに住み着く
 - [ ] 覚えているお題をすべて返信する
 - [ ] お題を与えられたら、覚える
 - [ ] お題を頼まれたら、ランダムにひとつ返信する
@@ -14,9 +14,19 @@ Odaidon is a ruboty gives drawing theme in mastodon.
 - [ ] お題関連の機能をgemにする
 
 ## Development
+### .envの準備
+`dot.env`を`.env`という名前でコピーします。
+`.env`の下記項目を環境に合わせて変更してください。
+
+| 環境変数名 | 説明 |
+| --- | --- |
+| RUBOTY_NAME | mastodonのアカウント名 |
+| MASTODON_URL | mastodonのURL |
+| MASTODON_TOKEN | mastodonアカウントにread/writeで設定したアプリのアクセストークン |
+
 ### 起動
 ```
-$ bundle exec ruboty -l parrot.rb
+$ bundle exec ruboty --dotenv -l parrot.rb
 ```
 
 ### 終了
@@ -26,6 +36,6 @@ $ bundle exec ruboty -l parrot.rb
 
 ### オウム返し
 ```
-> ruboty parrot hello!
+> @odaidon parrot hello!
 You said "hello!"
 ```
