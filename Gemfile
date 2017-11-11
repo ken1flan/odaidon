@@ -4,6 +4,7 @@ gem 'mastodon-api', git: 'https://github.com/tootsuite/mastodon-api', ref: '39f4
 gem 'rake'
 gem 'ruboty'
 gem 'ruboty-mastodon', git: 'https://github.com/en30/ruboty-mastodon'
+gem 'ruboty-redis'
 
 group :development, :test do
   gem 'pry-byebug'
