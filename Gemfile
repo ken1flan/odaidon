@@ -8,4 +8,5 @@ gem 'ruboty-redis'
 
 group :development, :test do
   gem 'pry-byebug'
+  gem 'timecop'
 end

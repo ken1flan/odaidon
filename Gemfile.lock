@@ -80,6 +80,7 @@ GEM
       nokogumbo (~> 1.4.1)
     slop (4.6.0)
     thread_safe (0.3.6)
+    timecop (0.9.1)
     tzinfo (1.2.4)
       thread_safe (~> 0.1)
     unf (0.1.4)
@@ -96,6 +97,7 @@ DEPENDENCIES
   ruboty
   ruboty-mastodon!
   ruboty-redis
+  timecop
 
 BUNDLED WITH
    1.15.4
