@@ -35,8 +35,14 @@ $ bin/start_redis.sh
 $ bin/start_ruboty.sh
 ```
 
-### オウム返し
+### お題のロード
 ```
-> @odaidon parrot hello!
-You said "hello!"
+> @odaidon load themes
+Load 194 themes.
+```
+
+### お題をもらう
+```
+> @odaidon give theme
+"trollface"
 ```
