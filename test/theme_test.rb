@@ -10,14 +10,14 @@ class ThemeTest < Minitest::Test
   end
 
   def test_reply_with_no_theme
-    message = Ruboty::Message.new(body: "theme please", robot: @robot)
+    message = Ruboty::Message.new(body: "give theme", robot: @robot)
     assert_output("\"empty\"\n") { @theme.get(message) }
   end
 
   def test_reply_with_a_theme
     @robot.brain.data[:theme] = %w(ruboty)
 
-    message = Ruboty::Message.new(body: "theme please", robot: @robot)
+    message = Ruboty::Message.new(body: "give theme", robot: @robot)
     assert_output("\"ruboty\"\n") { @theme.get(message) }
   end
 
@@ -26,7 +26,7 @@ class ThemeTest < Minitest::Test
     Timecop.travel(t)
 
     @robot.brain.data[:theme] = %w(ruby ruboty)
-    message = Ruboty::Message.new(body: "theme please", robot: @robot)
+    message = Ruboty::Message.new(body: "give theme", robot: @robot)
     assert_output("\"ruby\"\n") { @theme.get(message) }
 
     t = Time.local(2017, 11, 12, 12, 13, 14)
@@ -36,9 +36,14 @@ class ThemeTest < Minitest::Test
     t = Time.local(2017, 11, 11, 23, 57, 12)
     Timecop.freeze(t)
 
-    message = Ruboty::Message.new(body: "theme please", robot: @robot)
+    message = Ruboty::Message.new(body: "give theme", robot: @robot)
     assert_output("\"ruboty\"\n") { @theme.get(message) }
 
     Timecop.return
+  end
+
+  def test_load_themes
+    message = Ruboty::Message.new(body: "load themes", robot: @robot)
+    assert_output("Loaded 194 themes.\n") { @theme.load_from_file(message) }
   end
 end
