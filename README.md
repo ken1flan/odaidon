@@ -25,17 +25,24 @@ Odaidon is a ruboty gives drawing theme in mastodon.
 | MASTODON_TOKEN | mastodonアカウントにread/writeで設定したアプリのアクセストークン |
 
 ### 起動
+#### redis
 ```
-$ bundle exec ruboty --dotenv -l parrot.rb
-```
-
-### 終了
-```
-> exit
+$ bin/start_redis.sh
 ```
 
-### オウム返し
+#### ruboty
 ```
-> @odaidon parrot hello!
-You said "hello!"
+$ bin/start_ruboty.sh
+```
+
+### お題のロード
+```
+> @odaidon load themes
+Load 194 themes.
+```
+
+### お題をもらう
+```
+> @odaidon give theme
+"trollface"
 ```
