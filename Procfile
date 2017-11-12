@@ -1,1 +1,1 @@
-bot: bundle exec ruboty -l parrot.rb
+bot: bundle exec ruboty -l plugins.rb
