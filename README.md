@@ -23,6 +23,7 @@ Odaidon is a ruboty gives drawing theme in mastodon.
 | RUBOTY_NAME | mastodonのアカウント名 |
 | MASTODON_URL | mastodonのURL |
 | MASTODON_TOKEN | mastodonアカウントにread/writeで設定したアプリのアクセストークン |
+| ODAIDON_HASHTAG | お題を出したときにつけるハッシュタグ |
 
 ### 起動
 #### redis
@@ -45,4 +46,5 @@ Load 194 themes.
 ```
 > @odaidon give theme
 "trollface"
+#odaidon
 ```
