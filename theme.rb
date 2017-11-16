@@ -11,7 +11,8 @@ module Ruboty
         themes ||= []
         theme = themes.sample(random: Random.new(Date.today.to_time.to_i))
         theme ||= 'empty'
-        message.reply("\"#{theme}\"")
+        content = ("\"#{theme}\"\n#{hashtag}")
+        message.reply(content)
       end
 
       def load_from_file(message)
@@ -20,6 +21,14 @@ module Ruboty
         themes = file.readlines.map(&:chomp)
         message.robot.brain.data[:theme] = themes
         message.reply("Loaded #{themes.count} themes.")
+      end
+
+      private
+  
+      def hashtag
+        hashtag = ENV['ODAIDON_HASHTAG']
+        hashtag ||= 'odaidon'
+        "##{hashtag}"
       end
     end
   end
