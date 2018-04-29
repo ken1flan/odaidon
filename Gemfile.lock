@@ -19,21 +19,21 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.1.4)
+    activesupport (5.2.0)
       concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (~> 0.7)
+      i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     buftok (0.2.0)
-    byebug (9.1.0)
+    byebug (10.0.2)
     coderay (1.1.2)
     concurrent-ruby (1.0.5)
-    crass (1.0.3)
-    domain_name (0.5.20170404)
+    crass (1.0.4)
+    domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
-    dotenv (2.2.1)
+    dotenv (2.4.0)
     http (2.2.2)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -43,24 +43,24 @@ GEM
       domain_name (~> 0.5)
     http-form_data (1.0.3)
     http_parser.rb (0.6.0)
-    i18n (0.9.1)
+    i18n (1.0.1)
       concurrent-ruby (~> 1.0)
     mem (0.1.5)
     method_source (0.9.0)
     mini_portile2 (2.3.0)
-    minitest (5.10.3)
-    nokogiri (1.8.1)
+    minitest (5.11.3)
+    nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
-    nokogumbo (1.4.13)
+    nokogumbo (1.5.0)
       nokogiri
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
-    pry-byebug (3.5.0)
-      byebug (~> 9.1)
+    pry-byebug (3.6.0)
+      byebug (~> 10.0)
       pry (~> 0.10)
-    public_suffix (3.0.1)
-    rake (12.3.0)
+    public_suffix (3.0.2)
+    rake (12.3.1)
     redis (4.0.1)
     redis-namespace (1.6.0)
       redis (>= 3.0.4)
@@ -74,18 +74,18 @@ GEM
       redis
       redis-namespace
       ruboty
-    sanitize (4.5.0)
+    sanitize (4.6.4)
       crass (~> 1.0.2)
       nokogiri (>= 1.4.4)
-      nokogumbo (~> 1.4.1)
-    slop (4.6.0)
+      nokogumbo (~> 1.4)
+    slop (4.6.2)
     thread_safe (0.3.6)
     timecop (0.9.1)
-    tzinfo (1.2.4)
+    tzinfo (1.2.5)
       thread_safe (~> 0.1)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.4)
+    unf_ext (0.0.7.5)
 
 PLATFORMS
   ruby
@@ -99,5 +99,8 @@ DEPENDENCIES
   ruboty-redis
   timecop
 
+RUBY VERSION
+   ruby 2.5.1p57
+
 BUNDLED WITH
-   1.15.4
+   1.16.1
